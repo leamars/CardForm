@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671DEE9D1A8948C40036188C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671DEE9C1A8948C40036188C /* LaunchScreen.xib */; };
+		671DEE9F1A8971280036188C /* CardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DEE9E1A8971280036188C /* CardTest.m */; };
+		671DEEA11A89713C0036188C /* CardNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DEEA01A89713C0036188C /* CardNumberTest.m */; };
+		671DEEA31A89714B0036188C /* CardCCVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DEEA21A89714B0036188C /* CardCCVTest.m */; };
+		671DEEA51A89715B0036188C /* CardExpTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DEEA41A89715B0036188C /* CardExpTest.m */; };
+		6722B74F1A88E94A0043C7ED /* CardCCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 6722B74E1A88E94A0043C7ED /* CardCCV.m */; };
+		6722B7521A88EBC30043C7ED /* CardExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6722B7511A88EBC30043C7ED /* CardExp.m */; };
+		67F7AAF71A86FAC8001C11AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AAF61A86FAC8001C11AF /* main.m */; };
+		67F7AAFA1A86FAC8001C11AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AAF91A86FAC8001C11AF /* AppDelegate.m */; };
+		67F7AAFD1A86FAC8001C11AF /* CardFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AAFC1A86FAC8001C11AF /* CardFormViewController.m */; };
+		67F7AB021A86FAC8001C11AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F7AB011A86FAC8001C11AF /* Images.xcassets */; };
+		67F7AB111A86FAC9001C11AF /* CardFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AB101A86FAC9001C11AF /* CardFormTests.m */; };
+		67F7AB1C1A87052A001C11AF /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AB1B1A87052A001C11AF /* Card.m */; };
+		67F7AB1F1A8706B0001C11AF /* CardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F7AB1E1A8706B0001C11AF /* CardNumber.m */; };
+		67F7AB241A886A1B001C11AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F7AB221A886A1B001C11AF /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67F7AB0B1A86FAC9001C11AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F7AAE91A86FAC8001C11AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F7AAF01A86FAC8001C11AF;
+			remoteInfo = CardForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		671DEE9C1A8948C40036188C /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		671DEE9E1A8971280036188C /* CardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardTest.m; path = ../CardForm/CardTest.m; sourceTree = "<group>"; };
+		671DEEA01A89713C0036188C /* CardNumberTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardNumberTest.m; path = ../CardForm/CardNumberTest.m; sourceTree = "<group>"; };
+		671DEEA21A89714B0036188C /* CardCCVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCCVTest.m; path = ../CardForm/CardCCVTest.m; sourceTree = "<group>"; };
+		671DEEA41A89715B0036188C /* CardExpTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardExpTest.m; path = ../CardForm/CardExpTest.m; sourceTree = "<group>"; };
+		6722B74D1A88E94A0043C7ED /* CardCCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCCV.h; sourceTree = "<group>"; };
+		6722B74E1A88E94A0043C7ED /* CardCCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCCV.m; sourceTree = "<group>"; };
+		6722B7501A88EBC30043C7ED /* CardExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardExp.h; sourceTree = "<group>"; };
+		6722B7511A88EBC30043C7ED /* CardExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardExp.m; sourceTree = "<group>"; };
+		67F7AAF11A86FAC8001C11AF /* CardForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F7AAF51A86FAC8001C11AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F7AAF61A86FAC8001C11AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67F7AAF81A86FAC8001C11AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67F7AAF91A86FAC8001C11AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67F7AAFB1A86FAC8001C11AF /* CardFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardFormViewController.h; sourceTree = "<group>"; };
+		67F7AAFC1A86FAC8001C11AF /* CardFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardFormViewController.m; sourceTree = "<group>"; };
+		67F7AB011A86FAC8001C11AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		67F7AB0A1A86FAC9001C11AF /* CardFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F7AB0F1A86FAC9001C11AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F7AB101A86FAC9001C11AF /* CardFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardFormTests.m; sourceTree = "<group>"; };
+		67F7AB1A1A87052A001C11AF /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		67F7AB1B1A87052A001C11AF /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		67F7AB1D1A8706B0001C11AF /* CardNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardNumber.h; sourceTree = "<group>"; };
+		67F7AB1E1A8706B0001C11AF /* CardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardNumber.m; sourceTree = "<group>"; };
+		67F7AB201A8707E3001C11AF /* CardType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardType.h; sourceTree = "<group>"; };
+		67F7AB231A886A1B001C11AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67F7AAEE1A86FAC8001C11AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F7AB071A86FAC9001C11AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671DEE641A8946470036188C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AB1A1A87052A001C11AF /* Card.h */,
+				67F7AB1B1A87052A001C11AF /* Card.m */,
+				67F7AB1D1A8706B0001C11AF /* CardNumber.h */,
+				67F7AB1E1A8706B0001C11AF /* CardNumber.m */,
+				67F7AB201A8707E3001C11AF /* CardType.h */,
+				6722B74D1A88E94A0043C7ED /* CardCCV.h */,
+				6722B74E1A88E94A0043C7ED /* CardCCV.m */,
+				6722B7501A88EBC30043C7ED /* CardExp.h */,
+				6722B7511A88EBC30043C7ED /* CardExp.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		671DEE651A89465B0036188C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AAF81A86FAC8001C11AF /* AppDelegate.h */,
+				67F7AAF91A86FAC8001C11AF /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		671DEE661A8946670036188C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AAFB1A86FAC8001C11AF /* CardFormViewController.h */,
+				67F7AAFC1A86FAC8001C11AF /* CardFormViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67F7AAE81A86FAC8001C11AF = {
+			isa = PBXGroup;
+			children = (
+				67F7AAF31A86FAC8001C11AF /* CardForm */,
+				67F7AB0D1A86FAC9001C11AF /* CardFormTests */,
+				67F7AAF21A86FAC8001C11AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67F7AAF21A86FAC8001C11AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AAF11A86FAC8001C11AF /* CardForm.app */,
+				67F7AB0A1A86FAC9001C11AF /* CardFormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67F7AAF31A86FAC8001C11AF /* CardForm */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AB011A86FAC8001C11AF /* Images.xcassets */,
+				67F7AB221A886A1B001C11AF /* Main.storyboard */,
+				671DEE9C1A8948C40036188C /* LaunchScreen.xib */,
+				671DEE641A8946470036188C /* Models */,
+				671DEE651A89465B0036188C /* AppDelegate */,
+				671DEE661A8946670036188C /* ViewControllers */,
+				67F7AAF41A86FAC8001C11AF /* Supporting Files */,
+			);
+			path = CardForm;
+			sourceTree = "<group>";
+		};
+		67F7AAF41A86FAC8001C11AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AAF51A86FAC8001C11AF /* Info.plist */,
+				67F7AAF61A86FAC8001C11AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67F7AB0D1A86FAC9001C11AF /* CardFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				671DEE9E1A8971280036188C /* CardTest.m */,
+				671DEEA01A89713C0036188C /* CardNumberTest.m */,
+				671DEEA21A89714B0036188C /* CardCCVTest.m */,
+				671DEEA41A89715B0036188C /* CardExpTest.m */,
+				67F7AB101A86FAC9001C11AF /* CardFormTests.m */,
+				67F7AB0E1A86FAC9001C11AF /* Supporting Files */,
+			);
+			path = CardFormTests;
+			sourceTree = "<group>";
+		};
+		67F7AB0E1A86FAC9001C11AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F7AB0F1A86FAC9001C11AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67F7AAF01A86FAC8001C11AF /* CardForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F7AB141A86FAC9001C11AF /* Build configuration list for PBXNativeTarget "CardForm" */;
+			buildPhases = (
+				67F7AAED1A86FAC8001C11AF /* Sources */,
+				67F7AAEE1A86FAC8001C11AF /* Frameworks */,
+				67F7AAEF1A86FAC8001C11AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardForm;
+			productName = CardForm;
+			productReference = 67F7AAF11A86FAC8001C11AF /* CardForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67F7AB091A86FAC9001C11AF /* CardFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F7AB171A86FAC9001C11AF /* Build configuration list for PBXNativeTarget "CardFormTests" */;
+			buildPhases = (
+				67F7AB061A86FAC9001C11AF /* Sources */,
+				67F7AB071A86FAC9001C11AF /* Frameworks */,
+				67F7AB081A86FAC9001C11AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F7AB0C1A86FAC9001C11AF /* PBXTargetDependency */,
+			);
+			name = CardFormTests;
+			productName = CardFormTests;
+			productReference = 67F7AB0A1A86FAC9001C11AF /* CardFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67F7AAE91A86FAC8001C11AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Hellosunschein;
+				TargetAttributes = {
+					67F7AAF01A86FAC8001C11AF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					67F7AB091A86FAC9001C11AF = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 67F7AAF01A86FAC8001C11AF;
+					};
+				};
+			};
+			buildConfigurationList = 67F7AAEC1A86FAC8001C11AF /* Build configuration list for PBXProject "CardForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67F7AAE81A86FAC8001C11AF;
+			productRefGroup = 67F7AAF21A86FAC8001C11AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67F7AAF01A86FAC8001C11AF /* CardForm */,
+				67F7AB091A86FAC9001C11AF /* CardFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67F7AAEF1A86FAC8001C11AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671DEE9D1A8948C40036188C /* LaunchScreen.xib in Resources */,
+				67F7AB241A886A1B001C11AF /* Main.storyboard in Resources */,
+				67F7AB021A86FAC8001C11AF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F7AB081A86FAC9001C11AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67F7AAED1A86FAC8001C11AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F7AAFD1A86FAC8001C11AF /* CardFormViewController.m in Sources */,
+				67F7AAFA1A86FAC8001C11AF /* AppDelegate.m in Sources */,
+				6722B74F1A88E94A0043C7ED /* CardCCV.m in Sources */,
+				67F7AB1F1A8706B0001C11AF /* CardNumber.m in Sources */,
+				67F7AB1C1A87052A001C11AF /* Card.m in Sources */,
+				6722B7521A88EBC30043C7ED /* CardExp.m in Sources */,
+				67F7AAF71A86FAC8001C11AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F7AB061A86FAC9001C11AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671DEEA51A89715B0036188C /* CardExpTest.m in Sources */,
+				67F7AB111A86FAC9001C11AF /* CardFormTests.m in Sources */,
+				671DEE9F1A8971280036188C /* CardTest.m in Sources */,
+				671DEEA31A89714B0036188C /* CardCCVTest.m in Sources */,
+				671DEEA11A89713C0036188C /* CardNumberTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67F7AB0C1A86FAC9001C11AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F7AAF01A86FAC8001C11AF /* CardForm */;
+			targetProxy = 67F7AB0B1A86FAC9001C11AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67F7AB221A886A1B001C11AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67F7AB231A886A1B001C11AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67F7AB121A86FAC9001C11AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		67F7AB131A86FAC9001C11AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67F7AB151A86FAC9001C11AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67F7AB161A86FAC9001C11AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		67F7AB181A86FAC9001C11AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CardFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardForm.app/CardForm";
+			};
+			name = Debug;
+		};
+		67F7AB191A86FAC9001C11AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CardFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardForm.app/CardForm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67F7AAEC1A86FAC8001C11AF /* Build configuration list for PBXProject "CardForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F7AB121A86FAC9001C11AF /* Debug */,
+				67F7AB131A86FAC9001C11AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F7AB141A86FAC9001C11AF /* Build configuration list for PBXNativeTarget "CardForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F7AB151A86FAC9001C11AF /* Debug */,
+				67F7AB161A86FAC9001C11AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F7AB171A86FAC9001C11AF /* Build configuration list for PBXNativeTarget "CardFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F7AB181A86FAC9001C11AF /* Debug */,
+				67F7AB191A86FAC9001C11AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67F7AAE91A86FAC8001C11AF /* Project object */;
+}

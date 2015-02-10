@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <scenes>
+        <!--Card Form View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CardFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7N-7g-gsd" userLabel="Top">
+                                <rect key="frame" x="132" y="129" width="336" height="52"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="GenericCard" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-C9-gGB">
+                                        <rect key="frame" x="8" y="8" width="56" height="38"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234 5678 9012 3456" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7G-Zw-0kv">
+                                        <rect key="frame" x="68" y="8" width="260" height="38"/>
+                                        <color key="backgroundColor" red="0.97636467218399048" green="0.97653156518936157" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.12849333882331848" green="0.13209271430969238" blue="0.13448604941368103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="4Vw-pb-NKx"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="0DO-6m-VUF"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w7G-Zw-0kv" secondAttribute="trailing" constant="8" id="HRH-EK-TtV"/>
+                                    <constraint firstItem="j8f-C9-gGB" firstAttribute="leading" secondItem="k7N-7g-gsd" secondAttribute="leading" constant="8" id="omk-yl-4VY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uY-rn-wR7" userLabel="Bottom">
+                                <rect key="frame" x="132" y="194" width="336" height="52"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM/YY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYE-T0-7T0">
+                                        <rect key="frame" x="70" y="7" width="85" height="38"/>
+                                        <color key="backgroundColor" red="0.97636467218399048" green="0.97653156518936157" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.12928679585456848" green="0.13335999846458435" blue="0.13335761427879333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="yhP-lK-9XT"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="knK-gH-Z3N"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CCV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFw-fv-foc">
+                                        <rect key="frame" x="181" y="6" width="85" height="38"/>
+                                        <color key="backgroundColor" red="0.97636467218399048" green="0.97653156518936157" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.12928679585456848" green="0.13335999846458435" blue="0.13335761427879333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="editingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="agm-a2-i2p"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="JF7-Ga-JuO"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bYE-T0-7T0" firstAttribute="leading" secondItem="8uY-rn-wR7" secondAttribute="leading" constant="70" id="ca6-rV-UJF"/>
+                                    <constraint firstAttribute="trailing" secondItem="UFw-fv-foc" secondAttribute="trailing" constant="70" id="iC8-l8-BIv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Message for user." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU9-Ex-AWp">
+                                <rect key="frame" x="132" y="28" width="336" height="99"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqy-3R-mmG">
+                                <rect key="frame" x="256" y="274" width="89" height="36"/>
+                                <color key="backgroundColor" red="0.97636467218399048" green="0.97653156518936157" blue="0.97635418176651001" alpha="0.41000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sJp-7Q-lOA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21777462959289551" green="0.58001804351806641" blue="0.81701427698135376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="eqy-3R-mmG" secondAttribute="centerX" id="CQu-zl-QJG"/>
+                            <constraint firstAttribute="centerX" secondItem="jU9-Ex-AWp" secondAttribute="centerX" id="Knp-iq-MGf"/>
+                            <constraint firstAttribute="centerX" secondItem="k7N-7g-gsd" secondAttribute="centerX" id="Tjj-nt-Had"/>
+                            <constraint firstAttribute="centerX" secondItem="8uY-rn-wR7" secondAttribute="centerX" id="aLD-cY-vMO"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="bottomFieldBackgroundView" destination="8uY-rn-wR7" id="ecA-OP-g1A"/>
+                        <outlet property="cardCCVField" destination="UFw-fv-foc" id="qlq-sZ-LEw"/>
+                        <outlet property="cardExpField" destination="bYE-T0-7T0" id="mUk-rx-q32"/>
+                        <outlet property="cardImage" destination="j8f-C9-gGB" id="Dew-oD-EjD"/>
+                        <outlet property="cardNumberField" destination="w7G-Zw-0kv" id="5Zm-Iw-aqD"/>
+                        <outlet property="messageForUser" destination="jU9-Ex-AWp" id="Utg-KB-kwo"/>
+                        <outlet property="submitButton" destination="eqy-3R-mmG" id="NNw-R2-FJC"/>
+                        <outlet property="topFieldBackgroundView" destination="k7N-7g-gsd" id="dgt-de-pyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GenericCard" width="28" height="19"/>
+    </resources>
+</document>
